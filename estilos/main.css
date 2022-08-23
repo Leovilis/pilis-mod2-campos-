@@ -90,7 +90,16 @@
   font-weight: 900;
   font-size: 4rem;
 
-  background: linear-gradient(to right, #CF1919 11%, #121FCF 21%, #00FF00 45%, #FFF826 50%, #CF1919 62%, #121FCF 73%, #00FF00 100%);
+  background: linear-gradient(
+    to right,
+    #cf1919 11%,
+    #121fcf 21%,
+    #00ff00 45%,
+    #fff826 50%,
+    #cf1919 62%,
+    #121fcf 73%,
+    #00ff00 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -143,19 +152,55 @@
 
 /* SETEO DE IMAGENES */
 
-.logo{
-    border-radius: 50%;
+.logo {
+  border-radius: 50%;
 }
-.cont-imagen img{
-    width: 600px;
-    height: auto;
-    margin-right: 10px;
-    background-size: cover;
+.cont-imagen img {
+  width: 600px;
+  height: auto;
+  margin-right: 10px;
+  background-size: cover;
 }
 
 /* FORMULARIO */
 
-form{
-    display: flex;
-    flex-direction: column;
+.registro{
+  
+}
+
+.form {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-family: Lora, sans-serif;
+  
+  font-size: 15px;
+  color: #fff;
+  margin: 10px 0 10px 0px;
+}
+
+input{
+  background-color: #0e85c9;
+}
+
+
+
+.btn {
+  margin-left: 45px;
+  width: 80px;
+  margin-top: 20px;
+  padding: 5px 0 5px 0;
+  background-color: #0e85c9;
+  color: #fff;
+  border: none;
+}
+
+.btn:hover{
+  background-color: #00ffb3;
+  color: #110f0f;
+  border: #0e85c9 solid 1px;
 }
