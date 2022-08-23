@@ -1,0 +1,106 @@
+
+/* APLINCADO RESETS */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* IMPORTANDO FONTS STYLE */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@400;500&family=Poppins&display=swap');
+
+/* ESTILOS DE NAVBAR */
+.nav-bar{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e85c9;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+.nav-list{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+}
+.list-item{
+    margin: 10px;
+}
+
+.list-item a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-bar img{
+    height: 60px;
+    margin-right: 20px;
+}
+
+/* APLICANDO ESTILOS AL HOME */
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    border-top: solid 2px;
+    /* background-color: #50bd86; */
+    background: rgb(14,133,201);
+    background: -moz-linear-gradient(left, rgb(14,133,201) 0%, rgb(23,189,224) 25%, rgb(80,189,134) 100%);
+    background: -webkit-linear-gradient(left, rgb(14,133,201) 0%, rgb(23,189,224) 25%, rgb(80,189,134) 100%);
+    background: linear-gradient(to right, rgb(14,133,201) 0%, rgb(23,189,224) 25%, rgb(80,189,134) 100%);
+}
+.container h1{
+    font-family: Lora, sans-serif;
+    font-size: 5em;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 0px 1px #585151, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+.container p{
+    font-family: Lora,sans-serif;
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    color: #fff;
+    text-align: center;
+}
+
+/* .text {
+    font-size:28px;
+    font-family:helvetica;
+    font-weight:bold;
+    color:#71d90b;
+    text-transform:uppercase;
+  } */
+  .container p b{
+    color: #585151;
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
