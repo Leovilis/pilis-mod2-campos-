@@ -4,7 +4,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
   <link rel="stylesheet" href="estilos/main.css" />
+  <script src="sweetalert2.all.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css">
   <title>ExpoJuy 2022</title>
 </head>
 
@@ -23,9 +27,13 @@
   </header>
 
   <section id="home" class="izquierda">
+    <div class="title">
+      <h1>De Jujuy al Mundo</h1>
+    </div>
     <div class="container">
+      
       <div class="cont-item">
-        <h1>De Jujuy al Mundo</h1>
+        
         <p>
           <span> Del 7 al 16 de octubre, te esperamos para vivir la </span><br />
           <b>ExpoJuy 2022</b>
@@ -57,12 +65,6 @@
           praesentium reiciendis doloribus, perferendis totam harum quo animi
           sit numquam possimus iusto aspernatur tempore! Assumenda, in sequi? Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Reiciendis eum commodi adipisci ipsam ducimus, pariatur rem repudiandae velit eveniet
-          architecto earum voluptatibus iste, dicta eius dignissimos placeat, corrupti harum. Debitis? Lorem ipsum dolor
-          sit amet consectetur adipisicing elit. Beatae iusto molestias id, omnis, voluptatem nisi, quidem explicabo
-          quis ullam accusamus doloremque. Reprehenderit eum provident at ad molestias vitae aperiam repellat. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Impedit vel deserunt repellat? Eum corporis magni
-          repellendus libero! Possimus quas corrupti sunt, provident recusandae unde rem voluptas! Adipisci fugit
-          tempora cupiditate.
         </p>
       </div>
     </div>
@@ -79,12 +81,7 @@
           sed repellat minus labore iste accusantium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
           architecto vitae laudantium eaque ipsa ea earum, neque, corrupti nam, reprehenderit ad harum optio velit
           aliquam provident inventore unde quod aliquid. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Laborum ratione molestias, impedit quo repudiandae nesciunt expedita eligendi neque! Consequuntur laudantium
-          deleniti quasi totam atque eos quas nesciunt provident, vero repellendus. Lorem ipsum, dolor sit amet
-          consectetur adipisicing elit. Ducimus provident quae perspiciatis praesentium ea officia sunt id! Eos odio
-          nisi quidem, asperiores totam, sed veritatis sapiente unde nesciunt, itaque doloribus. Lorem ipsum dolor, sit
-          amet consectetur adipisicing elit. Quasi excepturi in iure possimus soluta nam vero necessitatibus sunt enim
-          error suscipit quod eius ad saepe magnam, ipsam ipsum asperiores? Rem.
+          Laborum ratione molestias, impedit quo repudiandae nesciunt expedita eligendi neque! 
         </p>
       </div>
       <div class="cont-imagen-about">
@@ -96,11 +93,11 @@
   <section id="contact">
     <div class="container">
       <div class="contact-title">
-        <h2>Registar negocio</h2>
+        <h2>Registra tu stand</h2>
       </div>
-      <div class="contact-form"        
+      <div class="contact-form">        
 
-        <form action="">
+        <form action="" id="form">
           <div class="form-group">
             <label for="comercio">Comercio:</label>
             <input class="form-control" type="text" name="comercio" />
@@ -119,7 +116,7 @@
           </div>
 
 
-          <button class="btn btn-light" type="submit">Enviar</button>
+          <button id="enviar" class="btn btn-light" type="submit">Enviar</button>
         </form>
       </div>
 
@@ -136,7 +133,7 @@
       </div>
       <div id="caja02">
         <h2 id="ubicacion"></h2>
-        <img id="icono-anim" src="" alt="" height="128" width="128">
+        <img id="icono-anim" src="" alt="icono clima">
       </div>
       <div id="caja03">
         <h3>Veloc. del viento</h3>
@@ -146,9 +143,11 @@
   </section>
 
   <footer id="numeros">
-    <h3>El clima en el lugar del evento!</h3>
+    
+    <h3>Copyright © Ministerio de Desarrollo Económico y Producción de Jujuy </h3>
+    <a href=""><img src="assets/whatsapp.png" alt="Whatsapp"></a>
+    
   </footer>
-
 
   <script src="js/main.js"></script>
   <script src="js/clima.js"></script>
