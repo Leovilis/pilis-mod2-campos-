@@ -1,17 +1,11 @@
-function onClick (event) {
-    event.preventDefault();
-    console.log("click...");
-    console.log(event);
-  
-  
+function onClick () {
     const mensaje = {
       comercio: document.getElementById('comercio').value,
       titular: document.getElementById('titular').value,
-      celular: document.getElementById('celular').value
+      celular: document.getElementById('celular').value,
+      correo: document.getElementById('correo')
     }
-    console.log(mensaje);
-  
-  
+    
     fetch("https://jsonplaceholder.typicode.com/posts", {
       method: "POST",
       body: JSON.stringify(mensaje),
@@ -22,7 +16,7 @@ function onClick (event) {
           console.log(json);
           Swal.fire(
               'Enviado',
-              'Gracias por tu comentario',
+              'Gracias por registrarte',
               'success'
           );
           cleanForm();
